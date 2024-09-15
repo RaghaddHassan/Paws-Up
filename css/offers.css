@@ -5,19 +5,23 @@
     position: relative;
     left:25px;
     top: 25px;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .navbar{
-    top: 0;
-    left: 0;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
     width: 100%;
-    height: 70px;
-    position: sticky top;
+    height: 80px;
+    position: fixed;
+    background-color: #98d8aa;
+    z-index: 1;
 }
 a{
     text-decoration: none;
-    color:#98d8aa;
+    color:white;
     font-size: 25px;
 }
 ul{
@@ -32,14 +36,14 @@ ul li{
     position: relative;
 }
 ul li a:hover{
-    color: #ff6d60;
+    color: black;
 }
 ul li a::after{
     content: "";
     width: 0;
     height: 3px;
     position: absolute;
-    background-color: #f3e99f;
+    background-color: white;
     top: 100%;
     left: 0;
     transition: all 0.4s;
@@ -49,7 +53,10 @@ ul li a:hover::after{
 }
 form input {
     height: 30px;
-    margin-top: 80px;
+
+}
+.search{
+    margin-top: 130px;
 }
 
 #but1 {
@@ -92,16 +99,25 @@ color: white;}
     background-color: #98D8AA;
     color: white;
     border-radius: 10px;
-padding: 10px;
-margin-top: 5px;
+    padding: 15px;
+     margin-top: 5px;
+     cursor: pointer;
+     border: none;
+}
+.buy:hover{
+background-color: white;
+border: 2px #98D8AA solid;
+color: black;
 }
 span{
     font-weight: bold;
     color: #FF6D60;
 }
-.logoo{position: absolute;
+.logoo{
+    position: fixed;
     left: 160px;
     top: 25px;
     border-radius: 10px;
     width: 50px;
+    z-index: 9999999;
 }
